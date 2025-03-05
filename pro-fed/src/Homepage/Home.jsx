@@ -14,7 +14,7 @@ const Home =(p)=>{
 
     return(
         <div>
-<Navbar/>
+
 
 
 

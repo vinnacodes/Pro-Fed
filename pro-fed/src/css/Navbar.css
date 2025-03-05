@@ -1,8 +1,25 @@
-.nav{
+/* Navbar.css */
+h1{margin: 0px;}
 
-
+.Nav {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0; /* Prevent external gaps */
+  }
+  
+  .Nav img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .Nav ul {
     display: flex;
-    flex-direction: row;
-
-
-}
+    justify-content: space-around;
+    margin: 0; /* Remove default ul margin */
+    padding: 0; /* Remove default ul padding */
+  }
+  
+  /* Fix text-decoration for links, not li */
+  .Nav ul a {
+    text-decoration: none;
+  }
