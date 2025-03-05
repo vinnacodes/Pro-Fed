@@ -1,25 +1,35 @@
-/* Navbar.css */
-h1{margin: 0px;}
-
 .Nav {
     border: 1px solid black;
     border-radius: 10px;
-    margin: 0; /* Prevent external gaps */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Optional: center <ul> horizontally */
+    height: 60px; /* Fixed height for centering */
+    padding: 0; /* Remove any default padding */
+  }
+  
+  .Nav ul {
+    display: flex;
+    justify-content: space-around; /* Space <li> items horizontally */
+    align-items: center; /* Ensure <li> items are centered within ul */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
   }
   
   .Nav img {
     width: 40px;
     height: 40px;
+    display: block; /* Prevent any baseline alignment issues */
   }
   
-  .Nav ul {
-    display: flex;
-    justify-content: space-around;
-    margin: 0; /* Remove default ul margin */
-    padding: 0; /* Remove default ul padding */
-  }
-  
-  /* Fix text-decoration for links, not li */
-  .Nav ul a {
+  .Nav a {
     text-decoration: none;
+  }
+  
+  /* Ensure <li> has no extra spacing */
+  .Nav li {
+    margin: 0;
+    padding: 0;
   }
