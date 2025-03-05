@@ -1,35 +1,43 @@
 .Nav {
     border: 1px solid black;
     border-radius: 10px;
-    display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Optional: center <ul> horizontally */
-    height: 60px; /* Fixed height for centering */
-    padding: 0; /* Remove any default padding */
+    display: flex; /* Flex container for logo and ul */
+    align-items: center; /* Center everything vertically */
+    height: 60px; /* Fixed height */
+    padding: 0 10px; /* Optional: small horizontal padding */
+  }
+  
+  .Nav-logo {
+  
+    margin-right: 20px; /* Space between logo and links */
+  }
+  
+  .Nav-logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Makes the image circular */
+    display: block; /* Prevents baseline issues */
+    border: 2px solid #000; /* Optional: adds a circular "cover" effect */
   }
   
   .Nav ul {
     display: flex;
-    justify-content: space-around; /* Space <li> items horizontally */
-    align-items: center; /* Ensure <li> items are centered within ul */
+    justify-content: space-around; /* Space links evenly */
+    align-items: center; /* Center links vertically */
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 100%;
-  }
-  
-  .Nav img {
-    width: 40px;
-    height: 40px;
-    display: block; /* Prevent any baseline alignment issues */
+    flex-grow: 1; /* Allows ul to take remaining space */
   }
   
   .Nav a {
     text-decoration: none;
+    line-height: 40px; /* Matches image height for vertical alignment */
   }
   
-  /* Ensure <li> has no extra spacing */
   .Nav li {
     margin: 0;
     padding: 0;
   }
+
+  *{font-family: Verdana, Geneva, Tahoma, sans-serif;}
