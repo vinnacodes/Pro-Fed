@@ -11,6 +11,7 @@ const Companies =()=>{
             <li>
 
                 company 1
+                company 2
             ;
             </li>
         </ul>
