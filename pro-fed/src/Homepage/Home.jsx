@@ -9,7 +9,7 @@ import Navbar from "../Navbar";
 // we ll have the navbar and the the other import stuff,
 const Home =(p)=>{
 const[username,setUserName]=useState("user");
-const[Designation,setDesignation]=useState("");
+const[Desig,setDesig]=useState("");
 useEffect(()=>{as},[])
 
 
