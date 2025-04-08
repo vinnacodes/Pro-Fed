@@ -9,8 +9,8 @@ import Navbar from "../Navbar";
 // we ll have the navbar and the the other import stuff,
 const Home =(p)=>{
 const[username,setUserName]=useState("user");
-const[Desig,setDesig]=useState("");
-useEffect(()=>{},[])
+const[Designation,setDesignation]=useState("");
+useEffect(()=>{as},[])
 
 
     return(
@@ -32,6 +32,13 @@ name:{username}
     </li>
     <li>
       Role:{Desig}  
+
+   
+
+   
+
+
+
 
 
     </li>
