@@ -1,0 +1,17 @@
+.card{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 20em;
+    height: 20em;
+    position: relative;
+    left: 1em;
+    top: 3em;
+    text-align: center;
+    background-color: rgb(241, 237, 229);
+
+    
+}
+.userdetails li{
+    list-style: none;
+}
+

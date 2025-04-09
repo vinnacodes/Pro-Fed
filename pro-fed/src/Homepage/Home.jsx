@@ -1,55 +1,69 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar";
-
+import "./Home.css";
 
 
 // this ll be acting as the dashboard also
 // this is the Home page our users 
 
 // we ll have the navbar and the the other import stuff,
-const Home =(p)=>{
-const[username,setUserName]=useState("user");
-const[Desig,setDesig]=useState("");
-useEffect(()=>{as},[])
+const Home = (p) => {
+    const [username, setUserName] = useState("Vinna");
+    const [Desig, setDesig] = useState(" Developer");
+    const [userpic, Setuserpic] = useState("src/assets/user1.jpg");
 
 
-    return(
+    useEffect(() => { }, [])
+
+
+    return (
+
+
 
 
         <div>
 
-           <div className="card">
+            <div className="card">
+                {/* card starts  */}
 
-           <h1>Welcome Back {username}</h1>
- 
- <div className="userdetails">
+                <h2 id="usernamehead">Welcome Back </h2>  <span><h4>{username}</h4> </span>
 
-<ul>
 
-    <li>
-name:{username}
-        
-    </li>
-    <li>
-      Role:{Desig}  
+                <div id="userimage">
+                    <img src={userpic} alt="user pic" height={60} width={80} />
 
-   
-
-   
+                </div>
 
 
 
+                <div className="userdetails">
+
+                    <ul>
+
+                        <li>
 
 
-    </li>
-</ul>
-
- </div>
-         
+                        </li>
+                        <li>
+                            {Desig}
 
 
 
-           </div>
+
+
+
+
+
+
+                        </li>
+                    </ul>
+
+                </div>
+
+
+
+
+            </div>
 
 
 
@@ -58,6 +72,7 @@ name:{username}
 
 
         </div>
+        // card ends here
     )
 }
 export default Home;
