@@ -1,17 +1,28 @@
-.card{
+.card {
     border: 1px solid black;
     border-radius: 10px;
     width: 20em;
-    height: 20em;
+    height: 20em; /* Keep this, but we’ll adjust content */
     position: relative;
     left: 1em;
     top: 3em;
     text-align: center;
-    background-color: rgb(241, 237, 229);
-
-    
-}
-.userdetails li{
+    background-color: rgb(254, 254, 254);
+    padding: 1em; /* Add padding to fill the card */
+    box-sizing: border-box; /* Ensure padding doesn’t push content outside */
+  }
+  
+  .userdetails li {
     list-style: none;
-}
-
+    background-color: rgb(254, 254, 254); /* Match the card’s background */
+    padding: 0.5em; /* Add some padding to the list item */
+  }
+  
+  #userimage {
+    margin: 0.5em 0; /* Add vertical spacing around the image */
+  }
+  
+  h2, h4, span {
+    margin: 0; /* Reset default margins to avoid gaps */
+    background-color: rgb(254, 254, 254); /* Ensure text areas match */
+  }

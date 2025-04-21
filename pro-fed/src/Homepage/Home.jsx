@@ -13,7 +13,7 @@ const Home = (p) => {
     const [userpic, Setuserpic] = useState("src/assets/user1.jpg");
 
 
-    useEffect(() => { }, [])
+    useEffect(() => {}, [])
 
 
     return (
@@ -24,7 +24,7 @@ const Home = (p) => {
         <div>
 
             <div className="card">
-                {/* card starts  */}
+               
 
                 <h2 id="usernamehead">Welcome Back </h2>  <span><h4>{username}</h4> </span>
 
